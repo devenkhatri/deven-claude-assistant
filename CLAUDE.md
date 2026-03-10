@@ -26,8 +26,6 @@ Currently utilizing:
 Automated workflows and capabilities live in `.claude/skills/`. Each skill gets its own folder and `SKILL.md` file. They are built organically as recurring workflows emerge.
 
 **Skills to Build (Backlog):**
-- Social Media content preparation and posting to all channels.
-- Tracking and nurturing leads.
 - Planning of YouTube podcast and Skool community setup.
 
 ## Decision Log 📝
