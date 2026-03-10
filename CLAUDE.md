@@ -28,6 +28,7 @@ Automated workflows and capabilities live in `.claude/skills/`. Each skill gets 
 **Skills to Build (Backlog):**
 - Social Media content preparation and posting to all channels.
 - Tracking and nurturing leads.
+- Planning of YouTube podcast and Skool community setup.
 
 ## Decision Log 📝
 Major decisions are logged in `decisions/log.md`. This file is append-only.
