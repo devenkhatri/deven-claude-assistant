@@ -1,14 +1,14 @@
 ---
-name: Deep Research
+name: Research
 description: "A workflow for performing synthesized, multi-step web research tailored to personal context utilizing OpenRouter for final synthesis."
 ---
 
-# Deep Research Skill
+# Research Skill
 
 This skill guides the assistant on how to perform extensive, context-aware research.
 
 ## Trigger
-Use this skill when the user asks for "deep research" on a topic, or needs comprehensive analysis combined with personal business context.
+Use this skill when the user asks for "research" on a topic, or needs comprehensive analysis combined with personal business context.
 
 ## Workflow
 
@@ -30,9 +30,9 @@ Once sufficient raw data has been gathered, you must compile it and run it throu
 
 **Command to run:**
 ```bash
-node /Users/devengoratela/Work/deven-claude-assistant/.claude/skills/deep-research/openrouter_research.js "<user_prompt>" "<compiled_raw_data_and_context>"
+node /Users/devengoratela/Work/deven-claude-assistant/.claude/skills/research/openrouter_research.js "<user_prompt>" "<compiled_raw_data_and_context>"
 ```
-*(You may pass the data as a JSON string argument or write it to a temporary file in `/tmp/` and pass the filepath if it's too large).*
+*(You may pass the data as a JSON string argument or write it to a temporary file in `tmp/` and pass the filepath if it's too large).*
 
 ### 4. Structured Output
 The script will output markdown structured into:

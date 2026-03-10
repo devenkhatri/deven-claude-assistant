@@ -1,6 +1,6 @@
 ---
 name: Social Media Orchestrator Agent
-description: "A meta-workflow agent that uses Deep Research to gather data, then sequentially writes posts and image prompts for LinkedIn, Twitter, Instagram, Threads, and YouTube."
+description: "A meta-workflow agent that uses the Research skill to gather data, then sequentially writes posts and image prompts for LinkedIn, Twitter, Instagram, Threads, and YouTube."
 ---
 
 # Social Media Orchestrator Agent Skill
@@ -13,14 +13,14 @@ Use this skill when the user asks you to act as their "Social Media Agent," or a
 ## Workflow
 
 ### 1. Research Phase
-1. Execute the **Deep Research Skill** on the user's provided topic. 
+1. Execute the **Research Skill** on the user's provided topic. 
    - Load contexts (`@context/me.md`, `@context/current-priorities.md`, etc.).
    - Perform Web Search and Web Fetch.
    - Run the OpenRouter synthesis script.
 2. Read the resulting synthesized Markdown report from `references/research/`.
 
 ### 2. Drafting Phase (Cross-Platform Repurposing)
-Read the core directives for the 5 individual social media skills, but **do not physically publish**. Instead, draft the content specifically tailored to each platform based on the deep research:
+Read the core directives for the 5 individual social media skills, but **do not physically publish**. Instead, draft the content specifically tailored to each platform based on the research:
 - **LinkedIn:** Generate a long-form text post or carousel outline with professional formatting and targeted hashtags.
 - **Twitter(X):** Generate a 5-7 tweet thread starting with a viral hook.
 - **Instagram:** Generate a Reel script (Hook, Value, CTA) or Carousel slide text, plus caption.

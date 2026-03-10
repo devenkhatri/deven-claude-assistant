@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * OpenRouter Deep Research Synthesizer
+ * OpenRouter Research Synthesizer
  * 
  * Usage: node openrouter_research.js <prompt_file_or_string> <context_file_or_string>
  * 
