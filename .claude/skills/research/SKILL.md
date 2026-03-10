@@ -30,7 +30,7 @@ Once sufficient raw data has been gathered, you must compile it and run it throu
 
 **Command to run:**
 ```bash
-node /Users/devengoratela/Work/deven-claude-assistant/.claude/skills/research/openrouter_research.js "<user_prompt>" "<compiled_raw_data_and_context>"
+node ./.claude/skills/research/openrouter_research.js "<user_prompt>" "<compiled_raw_data_and_context>"
 ```
 *(You may pass the data as a JSON string argument or write it to a temporary file in `tmp/` and pass the filepath if it's too large).*
 
