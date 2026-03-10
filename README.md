@@ -42,10 +42,18 @@ The project is structured to give the AI maximum context with minimum clutter:
 
 1. Ensure the [Claude Code CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) is installed.
 2. Navigate to this repository in your terminal.
-3. (Optional) Provide the necessary `.env` variables if using the Research skill:
+3. Provide the necessary `.env` variables if using the Research or Social skills:
    ```env
    OPENROUTER_API_KEY=your_key_here
+   LINKEDIN_CLIENT_ID=your_linkedin_client_id
+   LINKEDIN_CLIENT_SECRET=your_linkedin_client_secret
+   LINKEDIN_ACCESS_TOKEN=your_2_month_access_token
    ```
+   > **Note on LinkedIn Access Token:** The LinkedIn access token expires every 2 months. To regenerate it:
+   > 1. Ensure `LINKEDIN_CLIENT_ID` and `LINKEDIN_CLIENT_SECRET` are set in `.env`.
+   > 2. Open terminal and run: `node .claude/skills/linkedin/generate_token.js`
+   > 3. Click the `http://localhost:3000` link to log in via your browser.
+   > 4. Copy the new access token printed in your terminal and update `.env`.
 4. Run `claude` to start the interactive session.
 5. Example Prompts:
    - *"Based on my current priorities, what should I focus on today?"*
